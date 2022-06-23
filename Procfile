@@ -1,4 +1,4 @@
-web: gunicorn hello:app
+web: gunicorn wakeup:app
 release: python manage.py makemigrations --noinput
 release: python manage.py collectstatic --noinput
 release: python manage.py migrate --noinput
